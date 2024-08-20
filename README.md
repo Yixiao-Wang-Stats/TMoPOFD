@@ -15,23 +15,24 @@ This software accompanies the paper titled *“Trimmed Mean for Partially Observ
   *Authors*: Ricardo Fraiman, Graciela Muniz  
   *Institutions*: Universidad de San Andrés, Buenos Aires, Argentina & Universidad de la República, Montevideo, Uruguay  
   *Year*: May 2001  
-  *AMS 1980 Subject Classifications*: 62G07, 62G05
+  *AMS 1980 Subject Classifications*: 62G07, 62G05  
+  *DOI*: [10.1007/BF02595706](https://doi.org/10.1007/BF02595706)
 
-This code aims to define the trimmed mean for partially observed functional data using the POIFD method and to establish the strong convergence of this estimator.
+This code aims to define the trimmed mean for partially observed functional data using the POIFD method and to establish the strong convergence of this estimator. Additionally, the code uses the package from the study *Integrated Depths for Partially Observed Functional Data* to generate POIFD-related work, which is available at [https://github.com/aefdz/fdaPOIFD](https://github.com/aefdz/fdaPOIFD).
 
 ### Mathematical Definition
 
-The $\alpha$-trimmed mean for partially observed functions is defined as the mean of the $n - [n\alpha]$ deepest observed values. More precisely, for $\beta > 0$, the sample version of the trimmed mean is given by:
+The $\alpha$-trimmed mean for partially observed functions is defined as the mean of the $n - \lfloor n\alpha \rfloor$ deepest observed values. More precisely, for $\beta > 0$, the sample version of the trimmed mean is given by:
 
-$$
-\hat{\mu}_{n}(t) = \frac{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(POIFD_{n}\left(X_{i}\right)\right)\mathbf{1}_{X_{i}(t)\text{ is observed}} X_{i}}{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(POIFD_{n}\left(X_{i}\right)\right)\mathbf{1}_{X_{i}(t)\text{ is observed}}} ,
-$$
+\[
+\hat{\mu}_{n}(t) = \frac{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right)\mathbf{1}_{\text{observed}}\left(X_{i}(t)\right) X_{i}(t)}{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right)\mathbf{1}_{\text{observed}}\left(X_{i}(t)\right)} ,
+\]
 
 where $\beta$ satisfies:
 
-$$
-\frac{1}{n} \sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(POIFD_{n}\left(X_{i}\right)\right) \simeq 1-\alpha .
-$$
+\[
+\frac{1}{n} \sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right) \simeq 1-\alpha .
+\]
 
 ## Test Usage
 
@@ -50,4 +51,6 @@ SimulateModel <- simulateModel(
 # Plot the data
 plotTrimmedMean(data, alpha = 0.3, type = "FMD")
 ```
+In the plot, the green line represents the trimmed mean, the yellow line represents the mean before trimming, and the blue lines represent the functions that were trimmed.
+
 <img src="IMAGE/example.png" style="display: block; margin: auto;" />
