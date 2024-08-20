@@ -4,7 +4,7 @@ This repository contains the simulation code for the **Trimmed Mean for Partiall
 
 ## Overview
 
-This software accompanies the paper titled *“Trimmed Mean for Partially Observed Functional Data”* by Yixiao Wang, which extends the work on the POIFD method. The work primarily references the following studies:
+This software accompanies the paper titled *“Trimmed Mean for Partially Observed Functional Data”* by Yixiao Wang, which extends the work on the POIFD method. This is my bachelor's thesis. The work primarily references the following studies:
 
 - **Integrated Depths for Partially Observed Functional Data**  
   *Authors*: A. Elías, R. Jiménez, A. M. Paganoni, L. M. Sangalli  
