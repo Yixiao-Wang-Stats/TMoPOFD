@@ -24,15 +24,15 @@ This code aims to define the trimmed mean for partially observed functional data
 
 The $\alpha$-trimmed mean for partially observed functions is defined as the mean of the $n - \lfloor n\alpha \rfloor$ deepest observed values. More precisely, for $\beta > 0$, the sample version of the trimmed mean is given by:
 
-\[
-\hat{\mu}_{n}(t) = \frac{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right)\mathbf{1}_{\text{observed}}\left(X_{i}(t)\right) X_{i}(t)}{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right)\mathbf{1}_{\text{observed}}\left(X_{i}(t)\right)} ,
-\]
+```math
+\hat{\mu}_{n}(t) = \frac{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right)\mathbf{1}_{\text{ is observed}}\left(X_{i}(t)\right) X_{i}(t)}{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right)\mathbf{1}_{\text{ is observed}}\left(X_{i}(t)\right)} ,
+```
 
 where $\beta$ satisfies:
 
-\[
+```math
 \frac{1}{n} \sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right) \simeq 1-\alpha .
-\]
+```
 
 ## Test Usage
 
