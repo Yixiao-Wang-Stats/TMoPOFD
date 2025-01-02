@@ -25,13 +25,13 @@ This code aims to define the trimmed mean for partially observed functional data
 The $\alpha$-trimmed mean for partially observed functions is defined as the mean of the $n - \lfloor n\alpha \rfloor$ deepest observed values. More precisely, for $\beta > 0$, the sample version of the trimmed mean is given by:
 
 ```math
-\hat{\mu}(t) = \frac{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}\left(X_{i}\right)\right)\mathbf{1}_{\text{observed}}\left(X_{i}(t)\right) X_{i}(t)}{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}\left(X_{i}\right)\right)\mathbf{1}_{\text{observed}}\left(X_{i}(t)\right)} ,
+\hat{\mu}(t) = \frac{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}\left(X_{i}\right)\right)\mathbf{1}_{\text{observed}\left(X_{i}(t)\right)} X_{i}(t)}{\sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}\left(X_{i}\right)\right)\mathbf{1}_{\text{observed}\left(X_{i}(t)\right)}} ,
 ```
 
 where $\beta$ satisfies:
 
 ```math
-\frac{1}{n} \sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}\left(X_{i}\right)\right) \simeq 1-\alpha ,
+\frac{1}{n} \sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}\left(X_{i}\right)\right) \approx 1-\alpha ,
 ```
 where POIFD(X) is the Partially Observed Integrated Functional Depth of $X$. For more details, see [Integrated Depths for Partially Observed Functional Data](https://doi.org/10.1080/10618600.2022.2070171).
 ## Test Usage
