@@ -31,7 +31,7 @@ The $\alpha$-trimmed mean for partially observed functions is defined as the mea
 where $\beta$ satisfies:
 
 ```math
-\frac{1}{n} \sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(\text{POIFD}_{n}\left(X_{i}\right)\right) \approx 1-\alpha ,
+\frac{1}{n} \sum_{i=1}^{n} \mathbf{1}_{[\beta,+\infty)}\left(POIFD_{n}\left(X_{i}\right)\right) \approx 1-\alpha ,
 ```
 where $POIFD_{n}(X)$ is the sample version Partially Observed Integrated Functional Depth of $X$. For more details, see [Integrated Depths for Partially Observed Functional Data](https://doi.org/10.1080/10618600.2022.2070171).
 
