@@ -35,7 +35,7 @@ where $\beta$ satisfies:
 ```
 where $POIFD_{n}(X)$ is the sample version Partially Observed Integrated Functional Depth of $X$. For more details, see [Integrated Depths for Partially Observed Functional Data](https://doi.org/10.1080/10618600.2022.2070171).
 
-We prove that 
+We prove the strong consistency that 
 ```math
 \hat{\mu}(t) \xrightarrow{\text{a.s.}}\mu(t)=\frac{E\left[\mathbf{1}_{\left[\beta,+\infty\right)}\left(POIFD\left(X\right)\right)\mathbf{1}_{X(t)\text{ is observed}} X(t)\right]}{{E\left[\mathbf{1}_{\left[\beta,+\infty\right)}\left(POIFD\left(X\right)\right)\mathbf{1}_{X(t)\text{ is observed}}\right]}} , \quad t\in\left[0,1\right].
 ```
