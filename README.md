@@ -37,7 +37,7 @@ where POIFD(X) is the Partially Observed Integrated Functional Depth of $X$. For
 
 We prove that 
 ```math
-\hat{\mu}(t) \xrightarrow{\text{a.s.}}\frac{1}{n} \sum_{i=1}^{n} \mathbf{1}[\beta,+\infty)\left(I\left(X_{i}\right)\right) \approx 1-\alpha .
+\hat{\mu}(t) \xrightarrow{\text{a.s.}}\mu(t)=\frac{E\left[\mathbf{1}_{\left[\beta,+\infty\right)}\left(POIFD\left(X\right)\right)\mathbf{1}_{X(t)\text{ is observed}} X(t)\right]}{{E\left[\mathbf{1}_{\left[\beta,+\infty\right)}\left(POIFD\left(X\right)\right)\mathbf{1}_{X(t)\text{ is observed}}\right]}} , \quad t\in\left[0,1\right].
 ```
 
 ## Test Usage
