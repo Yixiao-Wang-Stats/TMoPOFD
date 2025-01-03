@@ -40,7 +40,7 @@ We prove the strong consistency that
 \hat{\mu}(t) \xrightarrow{\text{a.s.}}\mu(t)=\frac{E\left[\mathbf{1}_{\left[\beta,+\infty\right)}\left(POIFD\left(X\right)\right)\mathbf{1}_{X(t)\text{ is observed}} X(t)\right]}{{E\left[\mathbf{1}_{\left[\beta,+\infty\right)}\left(POIFD\left(X\right)\right)\mathbf{1}_{X(t)\text{ is observed}}\right]}} , \quad t\in\left[0,1\right].
 ```
 
-## Test Usage
+## Usage Example
 
 Below is an example of how to simulate data and plot the trimmed mean using this code:
 
